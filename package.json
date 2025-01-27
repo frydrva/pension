@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "eleventy --serve",
+    "start": "npx @11ty/eleventy --serve",
     "prebuild": "rm -r ./dist",
-    "build": "eleventy"
+    "build": "eleventy",
+    "type": "module"
   },
   "repository": {
     "type": "git",
