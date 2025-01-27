@@ -6,8 +6,7 @@
   "scripts": {
     "type": "module",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx eleventy --serve",
-    
+    "start": "npx eleventy --serve"
   },
   "repository": {
     "type": "git",
@@ -22,5 +21,6 @@
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
     "eleventy": "^1.0.7"
-  }
+  },
+  "devDependencies": {}
 }
