@@ -2,19 +2,20 @@
 html { box-sizing: border-box; }
 *, ::before, ::after { box-sizing: inherit; }
 
-:root {
-	--grey-100: hsl(0, 0%, 10%);
-	--grey-200: hsl(0, 0%, 20%);
-	--grey-300: hsl(0, 0%, 30%);
-	--grey-400: hsl(0, 0%, 40%);
-	--grey-500: hsl(0, 0%, 50%);
-	--grey-600: hsl(0, 0%, 60%);
-	--grey-700: hsl(0, 0%, 70%);
-	--grey-800: hsl(0, 0%, 80%);
-	--grey-900: hsl(0, 0%, 90%);
 
-	--primary: #004769;
-	--accent: #fc0;
+:root {
+	--grey-900: rgb(26, 26, 26);
+	--grey-800: hsl(0, 0%, 20%);
+	--grey-700: hsl(0, 0%, 0%);
+	--grey-600: hsl(0, 0%, 0%);
+	--grey-500: hsl(0, 0%, 50%);
+	--grey-400: hsl(0, 0%, 60%);
+	--grey-300: hsl(0, 0%, 100%);
+	--grey-200: #1b1b1b;
+	--grey-100: #292929;
+
+	--primary: #ffa31a;
+	--accent: 	#1b1b1b;
 
 	--font-default: 'Open Sans', sans-serif;
 	--font-special: 'Raleway', sans-serif;
@@ -35,14 +36,17 @@ body {
 .wrapper {
 	max-width: 66rem;
 	margin: 0 auto;
-	background-color: white;
+	background-color: 	#505050;
 }
 
 h1, h2, h3 {
 	font-family: var(--font-special);
 	font-weight: normal;
+	color: white;
 }
-
+p {
+	color: white;
+}
 h1 { font-size: 2rem; }
 h2 { font-size: 1.5rem; }
 h3 { font-size: 1.2rem; }
@@ -104,7 +108,7 @@ section {
 	padding: var(--spacer-half) var(--spacer-bigger);
 	font-size: 14px;
 	text-align: right;
-	background-color: var(--grey-100);
+	background-color: #ffa31a;
 	color: white;
 }
 
@@ -135,6 +139,7 @@ section {
 	font-weight: bold;
 	flex: 0 0 100%;
 	margin-bottom: var(--spacer-half);
+	color: #ffffff;
 }
 
 .header__stars {
@@ -148,7 +153,9 @@ section {
 	min-height: 300px;
 	background: url(./../images/header-bg.jpg) no-repeat right center/cover;
 }
-
+.header__address {
+	color: #ffffff;
+}
 /*
  **************************************
 	MENU
@@ -168,7 +175,7 @@ section {
 }
 
 .menu__item:not(:last-child) {
-	border-right: 1px solid var(--grey-900);
+	border-right: 1px solid var(--accent);
 }
 
 .menu__link {
@@ -178,11 +185,11 @@ section {
 	font-size: 18px;
 	font-weight: bold;
 	text-decoration: none;
-	color: black;
+	color: 	#ffffff;;
 }
 
 .menu__link:hover {
-	background-color: var(--accent);
+	background-color: var(--primary);
 }
 
 
@@ -303,6 +310,7 @@ section {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-color: #ffa31a;
 }
 
 .services__icon img {
@@ -424,7 +432,7 @@ section {
 
 .footer a:hover,
 .footer a:focus {
-	color: var(--accent);
+	color: #ffa31a;
 }
 
 .footer__grid {
@@ -452,8 +460,9 @@ section {
 
 .footer__links li:not(:last-child) {
 	margin-bottom: var(--spacer-quarter);
+	
 }
 
 .footer__title {
-	color: var(--grey-700);
+	color: var(--grey-300);
 }
