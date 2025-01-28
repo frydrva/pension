@@ -1,26 +1,16 @@
 {
-  "name": "pension",
+  "name": "pension-eleventy",
   "version": "1.0.0",
   "description": "Povinný úkol.",
   "main": "index.js",
   "scripts": {
-    "type": "module",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx eleventy --serve"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/frydrva/pension.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/frydrva/pension/issues"
-  },
-  "homepage": "https://github.com/frydrva/pension#readme",
+  "type": "module",
   "dependencies": {
-    "@11ty/eleventy": "^3.0.0",
-    "eleventy": "^1.0.7"
-  },
-  "devDependencies": {}
+    "@11ty/eleventy": "^3.0.0"
+  }
 }
